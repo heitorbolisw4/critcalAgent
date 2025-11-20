@@ -8,6 +8,8 @@ __pycache__/
 dist/
 build/
 *.log
+.coverage
+coverage.xml
 
 # Ambientes
 .env
@@ -16,15 +18,28 @@ build/
 venv/
 env/
 .venv*/
+.python-version
 
 # IDE/OS
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
 
-# Relatórios gerados
+# Visual Studio / Copilot
+.vs/
+*.slnx
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Relatorios gerados
 security_report.md
-.vs/
-.vs/
-*.log
+
+# Node/Front-end
+node_modules/
+npm-debug.log*
+yarn-error.log*
