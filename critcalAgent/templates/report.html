@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="report-view">
+    <h2>SCAN RESULTS: {{ project }}</h2>
+    <div class="actions">
+        <a href="{{ url_for('index') }}">[ NEW SCAN ]</a>
+    </div>
+
+    <div class="report-content">
+        {{ report | safe }}
+    </div>
+</div>
+{% endblock %}

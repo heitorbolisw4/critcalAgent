@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+*.log
+
+# Ambientes
+.env
+.env.*
+.venv/
+venv/
+env/
+.venv*/
+
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Relatórios gerados
+security_report.md
+.vs/
+.vs/
+*.log

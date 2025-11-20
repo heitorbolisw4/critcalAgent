@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRITICAL AGENT // APPSEC SCANNER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CRITICAL AGENT v2.0</h1>
+            <p>SYSTEM STATUS: ONLINE // MODE: SECURE</p>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <p>&copy; 2025 Critical Systems. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

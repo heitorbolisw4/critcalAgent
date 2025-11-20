@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="scan-form">
+    <h2>INITIATE SCAN</h2>
+    <p>Enter project name (if in PROJECTS_ROOT) or full path:</p>
+    <form method="POST">
+        <input type="text" name="project_path" placeholder="e.g., my-project" required>
+        <button type="submit">SCAN NOW</button>
+    </form>
+    
+    {% if error %}
+    <div class="error">
+        <p>ERROR: {{ error }}</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
